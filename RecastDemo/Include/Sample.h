@@ -141,6 +141,10 @@ public:
 	
 	void setContext(BuildContext* ctx) { m_ctx = ctx; }
 	
+	BuildContext* getContext() {
+		return m_ctx;
+	}
+
 	void setTool(SampleTool* tool);
 	SampleToolState* getToolState(int type) { return m_toolStates[type]; }
 	void setToolState(int type, SampleToolState* s) { m_toolStates[type] = s; }
